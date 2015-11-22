@@ -1,7 +1,10 @@
 {
   "dependencies": {
+    "freezer-js": "^0.9.4",
+    "history": "^1.13.1",
     "react": "^0.14.2",
-    "react-dom": "^0.14.2"
+    "react-dom": "^0.14.2",
+    "react-router": "^1.0.0"
   },
   "devDependencies": {
     "@reubn/eslint-config-reubn": "^1.0.2",
