@@ -9,7 +9,7 @@ module.exports = React.createClass({
   render: function(){
     return (
       <Link to={"/subject/" + this.props.subject.name} className={styles()} style={{background: this.props.subject.colour}}>
-        <style>{`.${styles()}:nth-of-type(${this.props.i + 1}):hover{color:${this.props.subject.colour};background:#fff}`}</style>
+        <style>{`.${styles()}:nth-of-type(${this.props.i + 1}):hover{color:${this.props.subject.colour}}`}</style>
         {this.props.subject.name}
       </Link>
     )
