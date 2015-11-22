@@ -11,7 +11,7 @@ const SubjectsView = require("SubjectsView")
 const Subject = require("Subject")
 
 module.exports = function(parent){
-  return (<Router history={History.createHashHistory({queryKey: false})}>
+  return (<Router history={History.createHistory()}>
             <Route path="/" component={Display}>
               <IndexRoute component={SubjectsView} freezer={parent.freezer}/>
               <Route path="subjects" component={SubjectsView} freezer={parent.freezer}/>
