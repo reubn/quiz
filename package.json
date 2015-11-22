@@ -4,7 +4,8 @@
   "description": "Revision by Quiz",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js --harmony",
+    "build": "webpack --progress --colors --watch"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,36 @@
   "bugs": {
     "url": "https://github.com/reubn/quiz/issues"
   },
-  "homepage": "https://github.com/reubn/quiz#readme"
+  "homepage": "https://github.com/reubn/quiz#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "compression": "^1.5.1",
+    "express": "^4.13.1",
+    "express-jsx": "0.0.4",
+    "helmet": "^0.10.0",
+    "moment": "^2.10.3",
+    "morgan": "^1.6.1",
+    "serve-static": "^1.10.0"
+  },
+  "devDependencies": {
+    "@reubn/eslint-config-reubn": "^1.0.0",
+    "autoprefixer-loader": "^3.1.0",
+    "babel-core": "^6.1.4",
+    "babel-eslint": "^4.1.5",
+    "babel-loader": "^6.1.0",
+    "babel-plugin-transform-runtime": "^6.1.4",
+    "babel-polyfill": "^6.1.19",
+    "babel-preset-es2015": "^6.1.4",
+    "babel-preset-react": "^6.1.4",
+    "babel-runtime": "^6.1.4",
+    "css-loader": "^0.19.0",
+    "dragonfruit": "*",
+    "eslint": "^1.9.0",
+    "eslint-config-airbnb": "^1.0.0",
+    "eslint-plugin-react": "^3.8.0",
+    "file-loader": "^0.8.4",
+    "style-loader": "^0.12.4",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.2"
+  }
 }
