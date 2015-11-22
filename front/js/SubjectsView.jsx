@@ -1,5 +1,7 @@
 const React = require("react");
 
+const styles = require("SubjectsView.css")
+
 const SubjectPreview = require("SubjectPreview")
 
 module.exports = React.createClass({
@@ -9,8 +11,9 @@ module.exports = React.createClass({
   },
   render: function(){
     return (
-      <section>
-        {this.freezer.get().subjects.map((subject, key) => {return <SubjectPreview subject={subject} key={key}/>})}
+      <section className={styles()}>
+        <section className={styles("desc")}></section>
+        <section className={styles("subjects")}>{this.freezer.get().subjects.map((subject, key) => <SubjectPreview subject={subject} key={key} i={key} parent={this}/>)}</section>
       </section>
     )
   }
