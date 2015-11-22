@@ -1,5 +1,7 @@
 const React = require("react");
 
+const Link = require("react-router").Link
+
 module.exports = React.createClass({
   displayName: "Subject",
   componentWillMount: function(){
@@ -9,7 +11,10 @@ module.exports = React.createClass({
     const subject = this.freezer.get().subjects.find(s => s.name === this.props.params.name)
     console.log(subject)
     return (
-      <section>{JSON.stringify(subject)}</section>
+      <section>
+        <Link to="/subjects">Back</Link>
+        {JSON.stringify(subject)}
+      </section>
     )
   }
 })
