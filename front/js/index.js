@@ -16,15 +16,39 @@ module.exports = function(config){
   this.freezer = new Freezer({
     subjects: [
       {
-        name: "History"
+        name: "History",
+        colour: "#FFEB3B",
+        topics: [
+          {
+            name: "A",
+            description: ""
+          }
+        ]
       }, {
-        name: "Chemistry"
+        name: "Chemistry",
+        colour: "#4CAF50",
+        topics: [
+          {
+            name: "G",
+            description: ""
+          }
+        ]
       },
       {
-        name: "English"
+        name: "English",
+        colour: "#F44336",
+        topics: [
+          {
+            name: "F",
+            description: ""
+          }
+        ]
       }
     ]
   })
 
-  ReactDOM.render(<FreezerWrapper freezer={this.freezer}>{routes(this)}</FreezerWrapper>, document.body)
+  ReactDOM.render(
+    <FreezerWrapper freezer={this.freezer}>
+    {routes(this)}
+  </FreezerWrapper>, document.body)
 }
