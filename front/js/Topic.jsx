@@ -1,6 +1,6 @@
 const React = require("react");
 
-const Link = require("react-router").Link
+const Link = require("Link")
 
 const pathTools = require("pathTools")
 

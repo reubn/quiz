@@ -1,0 +1,19 @@
+.topicPreview {
+  display: inline-block;
+  text-decoration: none;
+  color: #222434;
+  font-size: 2rem;
+  width: 20vw;
+  min-width: 300px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: .5rem;
+  height: calc(66.66vh - 3rem);
+}
+@media (max-width: 667px) {
+  .topicPreview {
+    width: 0;
+    min-width: calc(100vw - 3rem);
+  }
+}

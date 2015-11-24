@@ -1,15 +1,27 @@
-.subjectPreview {
-  display: block;
-  height: 20vh;
-  flex-grow: 1;
-  flex-shrink: 1;
-  color: #fff;
-  text-decoration: none;
-  line-height: 20vh;
-  font-size: 2rem;
-  min-width: 200px;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1);
-}
-.subjectPreview:hover {
-  background: #fff!important;
-}
+  .subjectPreview {
+    display: block;
+    height: 20vh;
+    flex-grow: 1;
+    flex-shrink: 1;
+    color: #fff;
+    text-decoration: none;
+    line-height: 20vh;
+    font-size: 2rem;
+    min-width: 400px;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1);
+    margin: 11px;
+    border-radius: 5px;
+  }
+  .subjectPreview:hover {
+    background: #fff!important;
+  }
+  .subjectPreview:active {
+    letter-spacing: 5px;
+  }
+
+  @media (max-width: 400px) {
+    .subjectPreview {
+      width: 100vw;
+      min-width: 0;
+    }
+  }

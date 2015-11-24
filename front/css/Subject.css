@@ -1,0 +1,38 @@
+.info {
+  display: block;
+  width: 100%;
+  height: 33.33%;
+  border-bottom: rgba(0, 0, 0, 0.3) solid 3px;
+}
+.topics {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 66.66%;
+  background: #222434;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1);
+}
+.back {
+  position: absolute;
+  right: 2vw;
+  top: 2vh;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #fff;
+  background: transparent;
+  padding: 6px;
+  border-radius: 3px;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1);
+}
+.back:hover {
+  color: #222434;
+  background: #fff;
+}
+.title {
+  font-size: 16vh;
+  color: #fff;
+  line-height: 33.33vh;
+}
+.desc {}

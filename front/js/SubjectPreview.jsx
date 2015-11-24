@@ -2,7 +2,7 @@ const React = require("react");
 
 const styles = require("SubjectPreview.css")
 
-const Link = require("react-router").Link
+const Link = require("Link")
 
 module.exports = React.createClass({
   displayName: "SubjectPreview",
