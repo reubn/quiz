@@ -66,6 +66,8 @@ var Link = (function (_Component) {
     _Component.apply(this, arguments);
   }
 
+  Link.displayName = "Link";
+
   Link.prototype.handleClick = function handleClick(event) {
     var allowTransition = true;
 
