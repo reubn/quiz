@@ -11,7 +11,7 @@ module.exports = React.createClass({
   },
   render: function(){
     return (
-      <section className={styles()}>
+      <section>
         <section className={styles("desc")}></section>
         <section className={styles("subjects")}>{this.freezer.get().subjects.map((subject, key) => <SubjectPreview subject={subject} key={key} i={key} parent={this}/>)}</section>
       </section>
