@@ -39,10 +39,13 @@ module.exports = {
     }),
     new webpack.optimize.UglifyJsPlugin({
       minimize: true,
+      compress: {warnings: false },
       output: {
         comments: false
       }
-    })
+    }),
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.optimize.DedupePlugin()
   ],
   resolve: {
     modulesDirectories: ["web_modules", "node_modules", "js", "css"],
